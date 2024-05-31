@@ -1,0 +1,211 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "policy",
+						"type": "address"
+					}
+				],
+				"name": "NewCollateralProtectionInsurance",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "policy",
+						"type": "address"
+					}
+				],
+				"name": "NewCryptoWalletInsurance",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "collateralProtectionInsurancePolicies",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "premium",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "fullCoveragePercentage",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "partialCoveragePercentage",
+						"type": "uint256"
+					}
+				],
+				"name": "createCollateralProtectionInsurance",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "premium",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "coverageAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "createCryptoWalletInsurance",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "cryptoWalletInsurancePolicies",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getCollateralProtectionInsurancePolicies",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getCryptoWalletInsurancePolicies",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"InsuranceFactory.sol": "InsuranceFactory"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"CollateralProtectionInsurance.sol": {
+			"keccak256": "0xe0296c34eacf1bbd6561ae06f1928e93f61bc2777f72c8fc0e7437dea06f2e30",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://052c064374cd89e65a3ccf3defab31c73d56d8ee981a1e92a639de9a99e1d7c3",
+				"dweb:/ipfs/QmdQg3noQfepFpmprGYuXWaoz3WSaD7H7md7zDHnk55N9Q"
+			]
+		},
+		"CryptoWalletInsurance.sol": {
+			"keccak256": "0x1dfbbddb0a3dfdd5019a6c19598ee12c07861b5c9839fc0c803d2479a5cb5bcb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a527be1d9a4d205dd55a63cfe7d88a0a65ffb194a2303b5100abce303daf4831",
+				"dweb:/ipfs/QmZpYwBcvrJ9PmvfzVf1wknSJM1GCb3HGg2qX92A8WA6ax"
+			]
+		},
+		"InsuranceFactory.sol": {
+			"keccak256": "0x30cf67bce20edf34489b9f776b8abdc0fdb97bd2c820e793134f378df2eca483",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fd3bf6e0a28ba205947ab5c8ec4e5ca6e7c20fe66fbcff229f2a36b6c25c69b7",
+				"dweb:/ipfs/QmdNrQpmwF2poACDQ4t5SDtCHWe6QpGbdZRir5GjXh7ydj"
+			]
+		}
+	},
+	"version": 1
+}
